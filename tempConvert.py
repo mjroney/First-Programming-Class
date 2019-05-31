@@ -1,4 +1,4 @@
-def roney():
+def tempConvert():
     temp = input('    What kind of temperature \n    are you trying to convert? \n    Please indicate with fahr, cel, or kel. \n    ')
     d = float(input('    What is the number of degrees \n    to be converted? \n    '))
     if (temp == 'fahr'):
