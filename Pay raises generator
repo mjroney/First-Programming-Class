@@ -1,11 +1,12 @@
->>> def pay_raises(salary = 50000, years = 3, rate = .05):
-	salary = int(input('Enter the salary you would like to evaluate. \nJust whole dollars, no signs or cents required.'))
-	years = int(input('Enter the number of years ahead you would like to evaluate for.'))
-	rate = float(input('Provide the percent increase you expect to see each year. For a 2% raise enter ".02".'))
-	sal_raised = salary * (1 + rate)
-	for y in years:
-		print(sal_raised)
-    
-    
-    
-    DOESNT WORK YET.... GOTTA FIX MY 'int' for years
+def salary():
+    salary = float(input('Enter the salary you would like to evaluate.
+    \nJust whole dollars, no $ signs or cents required.\n\t\t\t\t$'))
+    rate = 1.05
+    years = 3
+    s1 = salary * rate
+    s2 = s1 * rate
+    s3 = s2 * rate
+    print(f'Your current salary is \t\t\t${salary:.2f}
+    \nAfter your first raise you will be paid: \t\t${s1:.2f}
+    \nAfter your second raise you will be paid: \t${s2:.2f}
+    \nYour final raise will be: \t\t\t${s3:.2f}')
